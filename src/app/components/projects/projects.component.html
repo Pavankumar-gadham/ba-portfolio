@@ -1,0 +1,19 @@
+<section class="projects-section">
+  <h2>OTC - <span>Cash Application Workflows</span></h2>
+
+  <div class="projects-grid">
+    <div class="project-card" appInView *ngFor="let project of projects">
+      <img [src]="project.image" alt="{{ project.name }}" />
+      <div class="card-content">
+        <h3>{{ project.name }}</h3>
+        <div>
+          <p *ngFor="let line of project.description">{{ line }}<br></p>
+        </div>
+        <div class="tech-tags">
+          <span *ngFor="let tech of project.tech">{{ tech }}</span>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>

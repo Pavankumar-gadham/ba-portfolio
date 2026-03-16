@@ -1,0 +1,193 @@
+.about-section {
+  padding: 4rem 2rem;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  /* Removed height: 72% to let content determine the height */
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-section h2 span {
+  color: #0ef;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.about-content.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0ef;
+  margin: 1rem;
+}
+
+.about-text {
+  max-width: 500px;
+  margin: 1rem;
+  text-align: left;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #0ef;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.about-highlights p {
+  margin: 0.5rem 0;
+  color: #eee;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #0ef;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.05);
+  background: #0ef9;
+  outline: none; /* Removes default focus outline */
+}
+
+/* Responsive Design */
+
+/* Tablets and Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 3rem 1.5rem; /* Reduce padding for tablets */
+  }
+
+  .about-section h2 {
+    font-size: 2.2rem; /* Slightly smaller heading */
+    margin-bottom: 1.5rem;
+  }
+
+  .about-image img {
+    width: 220px; /* Slightly smaller image */
+    height: 220px;
+  }
+
+  .about-text {
+    max-width: 450px; /* Slightly narrower text block */
+  }
+
+  .about-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem; /* Further reduce padding for mobile */
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+    margin-bottom: 1.2rem;
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
+  .about-image img {
+    width: 180px; /* Smaller image for mobile */
+    height: 180px;
+    margin: 0.5rem;
+  }
+
+  .about-text {
+    max-width: 100%; /* Use full width on mobile */
+    margin: 0.5rem;
+    text-align: center; /* Center-align text for better appearance */
+  }
+
+  .about-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .about-highlights p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem; /* Slightly smaller button */
+    font-size: 0.9rem;
+  }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1.5rem 0.5rem; /* Minimal padding for very small screens */
+  }
+
+  .about-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-image img {
+    width: 150px; /* Even smaller image */
+    height: 150px;
+    margin: 0.3rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-text p {
+    font-size: 0.85rem;
+  }
+
+  .about-highlights p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}

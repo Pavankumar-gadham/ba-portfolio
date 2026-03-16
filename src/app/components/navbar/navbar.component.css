@@ -1,0 +1,127 @@
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: rgb(71, 156, 185);
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+  text-shadow: 0 0 8px #00fff7, 0 0 16px #00fff7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background: rgb(0, 0, 0);
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #000000;
+}
+
+/* Hamburger styles */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle.active .hamburger {
+  transform: rotate(45deg);
+}
+.nav-toggle.active .hamburger::before {
+  transform: rotate(-90deg) translate(-8px, 0);
+  opacity: 0;
+}
+.nav-toggle.active .hamburger::after {
+  transform: rotate(-90deg) translate(-8px, 0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a1a2e;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    transform: translateY(0%);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
