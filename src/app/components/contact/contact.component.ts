@@ -16,15 +16,9 @@ export class ContactComponent {
   };
 
   onSubmit() {
-<<<<<<< HEAD
-    const serviceID = 'service_dqe8kf4';
-    const templateID = 'template_3yz14ai';
-    const publicKey = 'b79aJwjgiuScrZdGv';
-=======
     const serviceID = 'service_gr2trti';
     const templateID = 'template_7qjleck';
     const publicKey = 'rhO3nHCvIxVXaVNDH';
->>>>>>> d8ae06b (code updated)
 
     const templateParams = {
       title: 'New Contact Message', 
