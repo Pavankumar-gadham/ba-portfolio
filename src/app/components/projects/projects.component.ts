@@ -10,36 +10,36 @@ export class ProjectsComponent {
   projects: Project[] = [
 
     {
-      name: 'SAP Lockbox Payment Processing',
+      name: 'O2C Payment Data Analysis & Lockbox Processing',
       description: [
-        'Handled lockbox payment processing by retrieving remittance details from bank portals and matching incoming customer payments with open invoices in SAP.',
-        'Validated payment references, invoice numbers, and deposit details to ensure accurate payment posting and minimize unapplied cash.'
+        'Analyzed customer payment data received through lockbox processing by validating remittance details and matching payments with open invoices in SAP.',
+        'Identified patterns in unapplied cash and improved payment allocation accuracy through structured data validation and reconciliation.'
       ],
-      tech: ['SAP Accounts Receivable', 'Lockbox Processing', 'Payment Posting', 'Bank Portals', 'Microsoft Excel'],
+      tech: ['SAP Accounts Receivable', 'Payment Data Analysis', 'Lockbox Processing', 'Microsoft Excel', 'Financial Data Validation'],
       image: 'assets/images/o2c.png',
       liveLink: '',
       codeLink: ''
     },
 
     {
-      name: 'Unapplied Cash Investigation & Resolution',
+      name: 'Unapplied Cash & Collections Insight Analysis',
       description: [
-        'Investigated unapplied and unidentified payments by reviewing remittance advice and customer payment references.',
-        'Collaborated with collections teams and internal stakeholders to resolve discrepancies and ensure accurate allocation of payments to invoices.'
+        'Performed analysis of unapplied and unidentified payments by reviewing remittance data and customer accounts to identify root causes of mismatches.',
+        'Collaborated with collections teams to support dispute identification, short payment analysis, and customer follow-up strategies within the O2C cycle.'
       ],
-      tech: ['SAP O2C', 'Cash Application', 'Remittance Analysis', 'Customer Account Reconciliation', 'Stakeholder Communication'],
+      tech: ['O2C Process', 'Accounts Receivable Analysis', 'Discrepancy Investigation', 'Collections Workflow Understanding', 'Stakeholder Collaboration'],
       image: 'assets/images/o2c1.webp',
       liveLink: '',
       codeLink: ''
     },
 
     {
-      name: 'Customer Payment Reconciliation Process',
+      name: 'Customer Account Reconciliation & Aging Analysis',
       description: [
-        'Performed reconciliation between bank remittance data and SAP Accounts Receivable records to verify invoice values and payment transactions.',
-        'Managed scenarios such as partial payments, short payments, residual payments, and overpayments while maintaining accurate customer balances.'
+        'Conducted reconciliation analysis between SAP AR records and bank remittance data to ensure accurate customer account balances.',
+        'Analyzed aging data and payment trends to identify overdue invoices, short payments, and potential collection risks within customer accounts.'
       ],
-      tech: ['SAP AR', 'Payment Reconciliation', 'Financial Data Validation', 'Excel (Pivot Tables, VLOOKUP)', 'O2C Process'],
+      tech: ['SAP AR', 'Payment Reconciliation', 'Aging Analysis', 'Excel (Pivot Tables, VLOOKUP)', 'Financial Data Analysis'],
       image: 'assets/images/o2c2.jpg',
       liveLink: '',
       codeLink: ''
